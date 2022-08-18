@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hooks": "^1.0.1",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-react-hook": "^4.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.5",
+    "esbuild-loader": "^2.19.0"
+  }
+}
