@@ -202,3 +202,135 @@ ActionView::Template::Error (The asset "application.js" is not present in the as
     13:   <body>
   
 app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:51:19 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1915)
+Completed 200 OK in 17ms (Views: 9.6ms | Allocations: 2784)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:51:24 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1529)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 1808)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:51:25 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 1414)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 1663)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:51:56 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 1431)
+Completed 200 OK in 11ms (Views: 10.7ms | Allocations: 1675)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:52:49 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1425)
+Completed 200 OK in 7ms (Views: 6.0ms | Allocations: 1668)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:52:53 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1426)
+Completed 200 OK in 8ms (Views: 7.7ms | Allocations: 1673)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:52:54 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1434)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 1677)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:52:54 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1434)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 1677)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:52:54 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1449)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 1692)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:52:55 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1413)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 1656)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 13:55:23 +0200
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 126.0ms | Allocations: 1440)
+Completed 200 OK in 128ms (Views: 127.4ms | Allocations: 1683)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  
