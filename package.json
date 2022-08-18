@@ -7,13 +7,14 @@
     "react-hooks": "^1.0.1",
     "react-router-dom": "^6.3.0",
     "redux": "^4.2.0",
-    "redux-react-hook": "^4.0.3",
-    "stylelint-config-standard": "21.x",
-    "stylelint-csstree-validator": "1.x",
-    "stylelint-scss": "3.x"
+    "redux-react-hook": "^4.0.3"
   },
   "devDependencies": {
     "esbuild": "^0.15.5",
-    "esbuild-loader": "^2.19.0"
+    "esbuild-loader": "^2.19.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
   }
 }
