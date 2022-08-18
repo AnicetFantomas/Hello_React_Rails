@@ -2,7 +2,7 @@ import React from "react"
 import { Routes, Route } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from "./store";
-import Message from '../feature/message/message';
+import Message from '../feature/message/greeting';
 
 
 class App () {
