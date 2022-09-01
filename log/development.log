@@ -1,0 +1,1047 @@
+  [1m[35m (134.3ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (66.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (44.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831173744)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1845.4ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1182.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_development"[0m
+  [1m[35m (405.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_test"[0m
+  [1m[35m (2502.5ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (1349.9ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (1073.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (659.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831173744)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1975.0ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831173744"]]
+  [1m[36mTRANSACTION (266.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (30.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-31 17:43:42.676356"], ["updated_at", "2022-08-31 17:43:42.676356"]]
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831185900)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (539.5ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (830.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_development"[0m
+  [1m[35m (1557.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_test"[0m
+  [1m[35m (1529.4ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (1488.0ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (433.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (296.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831185900)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (163.7ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831185900"]]
+  [1m[36mTRANSACTION (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-31 19:00:13.529245"], ["updated_at", "2022-08-31 19:00:13.529245"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (1.5ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hello Anicet it been a long time"], ["created_at", "2022-08-31 19:00:32.981179"], ["updated_at", "2022-08-31 19:00:32.981179"]]
+  [1m[36mTRANSACTION (36.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.7ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hi, there nice to see you agin"], ["created_at", "2022-08-31 19:01:02.893298"], ["updated_at", "2022-08-31 19:01:02.893298"]]
+  [1m[36mTRANSACTION (13.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hi, It's my first time to see you"], ["created_at", "2022-08-31 19:01:29.334034"], ["updated_at", "2022-08-31 19:01:29.334034"]]
+  [1m[36mTRANSACTION (17.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Bonjour saningo, comment tu vas ?"], ["created_at", "2022-08-31 19:02:05.700653"], ["updated_at", "2022-08-31 19:02:05.700653"]]
+  [1m[36mTRANSACTION (29.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Bonsoir, I want you to teach me french"], ["created_at", "2022-08-31 19:02:38.650526"], ["updated_at", "2022-08-31 19:02:38.650526"]]
+  [1m[36mTRANSACTION (12.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:06:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 465)
+  Rendered layout layouts/application.html.erb (Duration: 1601.6ms | Allocations: 69520)
+Completed 200 OK in 1665ms (Views: 1612.1ms | ActiveRecord: 0.0ms | Allocations: 74069)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:06:57 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5807)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 6119)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:14 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2736)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3569)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:17 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2150)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 2414)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:18 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2141)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2393)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:18 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2129)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2379)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:19 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2132)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2382)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:14:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 524.3ms | Allocations: 21079)
+Completed 200 OK in 585ms (Views: 547.0ms | ActiveRecord: 0.0ms | Allocations: 24398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:15:09 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 317.3ms | Allocations: 6170)
+Completed 200 OK in 320ms (Views: 318.6ms | ActiveRecord: 0.0ms | Allocations: 6482)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:34:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 390.4ms | Allocations: 25116)
+Completed 200 OK in 418ms (Views: 399.5ms | ActiveRecord: 0.0ms | Allocations: 28434)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:02 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2259)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 2565)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:04 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2156)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2399)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:05 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2178)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 2425)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:06 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2181)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2428)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2735)
+Completed 200 OK in 14ms (Views: 12.4ms | Allocations: 3559)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2152)
+Completed 200 OK in 8ms (Views: 6.7ms | Allocations: 2412)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2152)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 2395)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2155)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 2398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2188)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2431)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2158)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 2401)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2158)
+Completed 200 OK in 11ms (Views: 10.8ms | Allocations: 2401)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 2160)
+Completed 200 OK in 48ms (Views: 47.0ms | Allocations: 2404)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2165)
+Completed 200 OK in 14ms (Views: 13.8ms | Allocations: 2408)
+
+
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:46:37 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 21417)
+Completed 200 OK in 87ms (Views: 74.3ms | ActiveRecord: 0.0ms | Allocations: 24736)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:47:20 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2334)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:51:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2168)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2418)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:57:17 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 334.2ms | Allocations: 6123)
+Completed 200 OK in 336ms (Views: 335.5ms | Allocations: 6370)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 09:57:18 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (61.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 335ms (Views: 1.2ms | ActiveRecord: 163.3ms | Allocations: 9072)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2384)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 2659)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:34 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 8.0ms | Allocations: 4336)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2161)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 2407)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:35 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 1236)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2167)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2415)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:36 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 1246)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:39 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2158)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2404)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:39 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:40 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2164)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2410)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:40 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 1.3ms | ActiveRecord: 1.5ms | Allocations: 1246)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:42 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2180)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2427)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:42 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 1.9ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:42 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2173)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2419)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:42 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 2.3ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:42 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2161)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2407)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 2.1ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2170)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2417)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 1.2ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2158)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 2404)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.4ms | Allocations: 1235)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2164)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2410)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (1.0ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 1.5ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:43 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2149)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2395)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:44 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (1.1ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.6ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:06:44 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2167)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2413)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:06:44 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 1.3ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 10:37:06 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 129.0ms | Allocations: 2421)
+Completed 200 OK in 133ms (Views: 132.7ms | Allocations: 3034)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 10:37:10 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 547ms (Views: 27.2ms | ActiveRecord: 176.1ms | Allocations: 6336)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 15:26:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (35.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 62.6ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 1620.8ms | Allocations: 25835)
+Completed 200 OK in 1744ms (Views: 1662.4ms | ActiveRecord: 0.0ms | Allocations: 29154)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 15:26:27 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (2.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 80ms (Views: 1.1ms | ActiveRecord: 13.9ms | Allocations: 6130)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 18:53:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 106.5ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 1388.6ms | Allocations: 21340)
+Completed 200 OK in 1512ms (Views: 1430.4ms | ActiveRecord: 0.0ms | Allocations: 24659)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 18:53:56 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (76.7ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 389ms (Views: 1.2ms | ActiveRecord: 279.2ms | Allocations: 6440)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 18:53:59 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2337)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2622)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 18:53:59 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (1.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 2.0ms | Allocations: 1344)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:28 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 409.2ms | Allocations: 2432)
+Completed 200 OK in 412ms (Views: 411.4ms | Allocations: 3047)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:32 +0200
+  
+Zeitwerk::NameError (expected file /home/anicetfantomas/Desktop/Microverse Projects/Hello_React_Rails/app/controllers/api/v1/greetings_controller.rb to define constant Api::V1::GreetingsController, but didn't
+
+      raise Zeitwerk::NameError.new("expected file #{file} to define constant #{cpath}, but didn't", cref.last)
+      ^^^^^):
+  
+zeitwerk (2.6.0) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:28:in `require'
+activesupport (7.0.3.1) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.3.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.3.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.3.1) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.3.1) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.3.1) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.3.1) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.3.1) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2330)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 2609)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:34 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2278)
+Completed 200 OK in 9ms (Views: 8.9ms | Allocations: 2562)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:35 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2179)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2424)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:36 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2161)
+Completed 200 OK in 8ms (Views: 7.9ms | Allocations: 2405)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:37 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:37 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2164)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 2409)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:37 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:37 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2173)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 2418)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:37 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:38 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2185)
+Completed 200 OK in 8ms (Views: 8.1ms | Allocations: 2430)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:38 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:41 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2182)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 2426)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:42 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:42 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2164)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 2408)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:42 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:43 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2155)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2399)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:43 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:08:46 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2176)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 2420)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:08:46 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GreetingsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:29 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2424)
+Completed 200 OK in 14ms (Views: 13.5ms | Allocations: 3038)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:30 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (1.0ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 227ms (Views: 0.7ms | ActiveRecord: 58.3ms | Allocations: 5721)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:31 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2327)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2607)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:31 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 746)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:32 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 2152)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 2399)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:32 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 757)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:33 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2155)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 2401)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:33 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 746)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2164)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2410)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:34 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.6ms | Allocations: 747)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2146)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2392)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:35 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (0.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.8ms | Allocations: 746)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 20:09:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2179)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2425)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 20:09:36 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 746)
+
+
