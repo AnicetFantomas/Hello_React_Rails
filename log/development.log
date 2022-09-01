@@ -1,0 +1,169 @@
+  [1m[35m (134.3ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (66.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (44.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831173744)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1845.4ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1182.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_development"[0m
+  [1m[35m (405.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_test"[0m
+  [1m[35m (2502.5ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (1349.9ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (1073.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (659.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831173744)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1975.0ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831173744"]]
+  [1m[36mTRANSACTION (266.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (30.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-31 17:43:42.676356"], ["updated_at", "2022-08-31 17:43:42.676356"]]
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831185900)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (539.5ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (830.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_development"[0m
+  [1m[35m (1557.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_new_rails_app_test"[0m
+  [1m[35m (1529.4ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (1488.0ms)[0m  [1m[35mCREATE DATABASE "my_new_rails_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (433.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (296.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220831185900)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (163.7ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831185900"]]
+  [1m[36mTRANSACTION (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-31 19:00:13.529245"], ["updated_at", "2022-08-31 19:00:13.529245"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5338899785425229835)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (1.5ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hello Anicet it been a long time"], ["created_at", "2022-08-31 19:00:32.981179"], ["updated_at", "2022-08-31 19:00:32.981179"]]
+  [1m[36mTRANSACTION (36.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.7ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hi, there nice to see you agin"], ["created_at", "2022-08-31 19:01:02.893298"], ["updated_at", "2022-08-31 19:01:02.893298"]]
+  [1m[36mTRANSACTION (13.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hi, It's my first time to see you"], ["created_at", "2022-08-31 19:01:29.334034"], ["updated_at", "2022-08-31 19:01:29.334034"]]
+  [1m[36mTRANSACTION (17.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Bonjour saningo, comment tu vas ?"], ["created_at", "2022-08-31 19:02:05.700653"], ["updated_at", "2022-08-31 19:02:05.700653"]]
+  [1m[36mTRANSACTION (29.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Bonsoir, I want you to teach me french"], ["created_at", "2022-08-31 19:02:38.650526"], ["updated_at", "2022-08-31 19:02:38.650526"]]
+  [1m[36mTRANSACTION (12.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:06:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 465)
+  Rendered layout layouts/application.html.erb (Duration: 1601.6ms | Allocations: 69520)
+Completed 200 OK in 1665ms (Views: 1612.1ms | ActiveRecord: 0.0ms | Allocations: 74069)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:06:57 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5807)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 6119)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:14 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2736)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3569)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:17 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2150)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 2414)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:18 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2141)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2393)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:18 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2129)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2379)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:12:19 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2132)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2382)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:14:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 524.3ms | Allocations: 21079)
+Completed 200 OK in 585ms (Views: 547.0ms | ActiveRecord: 0.0ms | Allocations: 24398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 21:15:09 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 317.3ms | Allocations: 6170)
+Completed 200 OK in 320ms (Views: 318.6ms | ActiveRecord: 0.0ms | Allocations: 6482)
+
+
