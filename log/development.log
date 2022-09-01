@@ -167,3 +167,177 @@ Processing by StaticController#index as HTML
 Completed 200 OK in 320ms (Views: 318.6ms | ActiveRecord: 0.0ms | Allocations: 6482)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:34:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 390.4ms | Allocations: 25116)
+Completed 200 OK in 418ms (Views: 399.5ms | ActiveRecord: 0.0ms | Allocations: 28434)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:02 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2259)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 2565)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:04 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2156)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2399)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:05 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2178)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 2425)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:06 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2181)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2428)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2735)
+Completed 200 OK in 14ms (Views: 12.4ms | Allocations: 3559)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2152)
+Completed 200 OK in 8ms (Views: 6.7ms | Allocations: 2412)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2152)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 2395)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2155)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 2398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2188)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2431)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:35 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2158)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 2401)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2158)
+Completed 200 OK in 11ms (Views: 10.8ms | Allocations: 2401)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 2160)
+Completed 200 OK in 48ms (Views: 47.0ms | Allocations: 2404)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:45:36 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2165)
+Completed 200 OK in 14ms (Views: 13.8ms | Allocations: 2408)
+
+
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:46:37 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 21417)
+Completed 200 OK in 87ms (Views: 74.3ms | ActiveRecord: 0.0ms | Allocations: 24736)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:47:20 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2334)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:51:34 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2168)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2418)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 09:57:17 +0200
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 334.2ms | Allocations: 6123)
+Completed 200 OK in 336ms (Views: 335.5ms | Allocations: 6370)
+
+
+Started GET "/api/v1/greetings" for 127.0.0.1 at 2022-09-01 09:57:18 +0200
+Processing by Api::V1::GreetingsController#index as HTML
+  [1m[36mGreeting Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "greetings" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:4:in `index'
+  [1m[36mGreeting Load (61.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/v1/greetings_controller.rb:7:in `index'
+Completed 200 OK in 335ms (Views: 1.2ms | ActiveRecord: 163.3ms | Allocations: 9072)
+
+
